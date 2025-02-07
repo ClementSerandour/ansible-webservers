@@ -18,7 +18,7 @@ Ce rôle utilise deux variables :
     - apache2
     - mariadb-server
 
-- `services`: liste du nom des services à vérifier le fonctionnement
+- `services`: liste du nom des services à vérifier le fonctionnement
   services:
   - apache2
   - mariadb
