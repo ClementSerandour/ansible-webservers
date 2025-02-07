@@ -1,5 +1,5 @@
 ---
 - name: Install MariaDB & Apache
-  hosts: allservers
+  hosts: localhost
   roles:
     - WebServers
