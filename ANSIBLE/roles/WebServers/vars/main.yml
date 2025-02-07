@@ -1,0 +1,9 @@
+---
+# vars file for WebServers
+packages: #listes des services installé par le role
+  - apache2
+  - mariadb-server
+
+services: #liste des services pour vérifier leurs fonctionnement
+  - apache2
+  - mariadb

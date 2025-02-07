@@ -1,0 +1,19 @@
+---
+- name: Install MariaDB
+  hosts: allservers
+  become: yes
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install MariaDB
+      apt:
+        name: mariadb-server
+        state: present
+
+    - name: Ensure mariadb service is started
+      service:
+        name: mariadb
+        state: started
+        enabled: yes
